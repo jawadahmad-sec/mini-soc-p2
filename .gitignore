@@ -1,5 +1,41 @@
+# Secrets - CRITICAL
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+wazuh-passwords.txt
+*password*.txt
+.credentials
+
+# Django
+local_settings.py
+staticfiles/
+db.sqlite3
+
+# Data & Artifacts (contain IPs, hostnames, usernames)
+*.log
+*.pcap
+*.pcapng
+*.zip
+*.tar.gz
+*.sqlite3
+.idea/
+.vscode/
+
+# Large files
+*.vdi
+*.vmdk
+*.ova
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
 venv/
 __pycache__/
-.env
 *.pyc
-.DS_Store
+
+# Personal files
+docs/MiniSOC-CheatSheet.*
